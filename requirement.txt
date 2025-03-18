@@ -1,0 +1,28 @@
+
+Fetch and display a list of YouTube videos
+Show video thumbnails, titles, and channel names
+Click on a video to open it in YouTube
+Add a search bar to filter videos (filteration should be done on frontend without any additional api calls)
+Implement a grid layout for better UI
+
+
+title
+channelTitle
+thumbnails
+
+ console.log(myVideos[0].items.id)
+        console.log(myVideos[0].items.snippet.title)
+        console.log(myVideos[0].items.snippet.channelTitle)
+        console.log(myVideos[0].items.snippet.thumbnails.default.url)
+
+        link=https://www.youtube.com/watch?v=
+
+
+              <video width="${video.items.snippet.thumbnails.medium.width}" height="${video.items.snippet.thumbnails.medium.height}" controls poster=
+"${video.items.snippet.thumbnails.medium.url}">
+        <source
+            src=
+"https://www.youtube.com/watch?v=${video.items.id}"
+
+            type="video/mp4">
+    </video>
